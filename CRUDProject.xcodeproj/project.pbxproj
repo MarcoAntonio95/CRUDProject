@@ -16,6 +16,11 @@
 		2F6C28FE24FBEF3E00CC1D70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F6C28FC24FBEF3E00CC1D70 /* LaunchScreen.storyboard */; };
 		2F6C290924FBEF3E00CC1D70 /* CRUDProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C290824FBEF3E00CC1D70 /* CRUDProjectTests.swift */; };
 		2F6C291424FBEF3E00CC1D70 /* CRUDProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6C291324FBEF3E00CC1D70 /* CRUDProjectUITests.swift */; };
+		2F6EE3A624FC880E00B11789 /* ClientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6EE3A524FC880E00B11789 /* ClientController.swift */; };
+		2F6EE3A824FC889600B11789 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6EE3A724FC889600B11789 /* DatabaseController.swift */; };
+		2F6EE3AE24FC94EA00B11789 /* ClientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6EE3AD24FC94EA00B11789 /* ClientsTableViewController.swift */; };
+		2FDB6A4124FC6558009B7AB2 /* ClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB6A4024FC6558009B7AB2 /* ClientTableViewCell.swift */; };
+		2FDB6A4424FC6FF2009B7AB2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB6A4324FC6FF2009B7AB2 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		2F6C290F24FBEF3E00CC1D70 /* CRUDProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRUDProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6C291324FBEF3E00CC1D70 /* CRUDProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDProjectUITests.swift; sourceTree = "<group>"; };
 		2F6C291524FBEF3E00CC1D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F6EE3A524FC880E00B11789 /* ClientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientController.swift; sourceTree = "<group>"; };
+		2F6EE3A724FC889600B11789 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		2F6EE3AD24FC94EA00B11789 /* ClientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTableViewController.swift; sourceTree = "<group>"; };
+		2FDB6A4024FC6558009B7AB2 /* ClientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTableViewCell.swift; sourceTree = "<group>"; };
+		2FDB6A4324FC6FF2009B7AB2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +111,14 @@
 		2F6C28ED24FBEF3E00CC1D70 /* CRUDProject */ = {
 			isa = PBXGroup;
 			children = (
+				2F6EE3A924FC88BD00B11789 /* ViewModel */,
+				2F6EE3A424FC87F100B11789 /* Model */,
+				2FDB6A4224FC6E8F009B7AB2 /* View */,
 				2F6C28EE24FBEF3E00CC1D70 /* AppDelegate.swift */,
-				2F6C28F024FBEF3E00CC1D70 /* SceneDelegate.swift */,
 				2F6C28F224FBEF3E00CC1D70 /* ViewController.swift */,
-				2F6C28F424FBEF3E00CC1D70 /* Main.storyboard */,
-				2F6C28FA24FBEF3E00CC1D70 /* Assets.xcassets */,
+				2F6C28F024FBEF3E00CC1D70 /* SceneDelegate.swift */,
 				2F6C28FC24FBEF3E00CC1D70 /* LaunchScreen.storyboard */,
+				2F6C28FA24FBEF3E00CC1D70 /* Assets.xcassets */,
 				2F6C28FF24FBEF3E00CC1D70 /* Info.plist */,
 				2F6C28F724FBEF3E00CC1D70 /* CRUDProject.xcdatamodeld */,
 			);
@@ -129,6 +141,33 @@
 				2F6C291524FBEF3E00CC1D70 /* Info.plist */,
 			);
 			path = CRUDProjectUITests;
+			sourceTree = "<group>";
+		};
+		2F6EE3A424FC87F100B11789 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EE3A724FC889600B11789 /* DatabaseController.swift */,
+				2FDB6A4024FC6558009B7AB2 /* ClientTableViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F6EE3A924FC88BD00B11789 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F6EE3A524FC880E00B11789 /* ClientController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2FDB6A4224FC6E8F009B7AB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F6C28F424FBEF3E00CC1D70 /* Main.storyboard */,
+				2FDB6A4324FC6FF2009B7AB2 /* RegisterViewController.swift */,
+				2F6EE3AD24FC94EA00B11789 /* ClientsTableViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +304,12 @@
 				2F6C28F324FBEF3E00CC1D70 /* ViewController.swift in Sources */,
 				2F6C28F924FBEF3E00CC1D70 /* CRUDProject.xcdatamodeld in Sources */,
 				2F6C28EF24FBEF3E00CC1D70 /* AppDelegate.swift in Sources */,
+				2FDB6A4424FC6FF2009B7AB2 /* RegisterViewController.swift in Sources */,
+				2FDB6A4124FC6558009B7AB2 /* ClientTableViewCell.swift in Sources */,
 				2F6C28F124FBEF3E00CC1D70 /* SceneDelegate.swift in Sources */,
+				2F6EE3A824FC889600B11789 /* DatabaseController.swift in Sources */,
+				2F6EE3A624FC880E00B11789 /* ClientController.swift in Sources */,
+				2F6EE3AE24FC94EA00B11789 /* ClientsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XHC8W6N72U;
 				INFOPLIST_FILE = CRUDProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XHC8W6N72U;
 				INFOPLIST_FILE = CRUDProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

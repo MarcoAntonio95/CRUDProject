@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CRUDProject
 //
-//  Created by Matheus Lutero on 30/08/20.
+//  Created by Marco Antonio on 30/08/20.
 //  Copyright © 2020 Marco. All rights reserved.
 //
 
@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func exit(_ sender: Any) {
+        //Única maneira de fechar a aplicação, mas não é recomendado pela Apple e não será aceito pela App Store caso possua este código.
+        exit(0);
+    }
+    
 }
 
